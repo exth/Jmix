@@ -8,7 +8,7 @@
   <a href="https://apps.apple.com/app/id6834225213"><img src="https://img.shields.io/badge/DOWNLOAD_ON_THE_APP_STORE-30363D?style=for-the-badge" alt="Download on the App Store"></a>
 </p>
 
-**Jmix** is an iPhone app that helps people find a career that fits their real life, and then actually follow it. You describe a typical day, AI suggests careers that match it, and the app turns the one you pick into a 10-step plan backed by a daily check-in habit. Jmix is a commercial app, so its source code is private
+**Jmix** is an iPhone app that helps people find a career that fits their real life, and then actually follow it. You describe a typical day, AI suggests careers that match it, and the app turns the one you pick into a 10-step plan backed by a daily check-in habit. _Jmix is a commercial app, so its source code is private_
 
 Designed, built and shipped solo, from the first sketch to the App Store
 
