@@ -5,7 +5,7 @@
 </picture>
 
 <p align="center">
-  <a href="https://apps.apple.com/app/id6834225213"><img src="https://img.shields.io/badge/Download_on_the-App_Store-0D1117?style=for-the-badge&logo=apple&logoColor=white&labelColor=30363D" alt="Download on the App Store"></a>
+  <a href="https://apps.apple.com/app/id6834225213"><img src="https://img.shields.io/badge/DOWNLOAD_ON_THE_APP_STORE-30363D?style=for-the-badge" alt="Download on the App Store"></a>
 </p>
 
 **Jmix** is an iPhone app that helps people find a career that fits their real life, and then actually follow it. You describe a typical day, AI suggests careers that match it, and the app turns the one you pick into a 10-step plan backed by a daily check-in habit.
@@ -16,9 +16,9 @@ Designed, built and shipped solo, from the first sketch to the App Store.
 
 <table>
   <tr>
-    <td align="center"><img src="assets/screenshots/home.png" width="250" alt="Home"><br><sub>Home</sub></td>
-    <td align="center"><img src="assets/screenshots/explore.png" width="250" alt="Explore"><br><sub>Explore</sub></td>
-    <td align="center"><img src="assets/screenshots/plan.png" width="250" alt="10-step plan"><br><sub>10-step plan</sub></td>
+    <td align="center"><img src="assets/screenshots/home.png" width="250" alt="Home"></td>
+    <td align="center"><img src="assets/screenshots/explore.png" width="250" alt="Explore"></td>
+    <td align="center"><img src="assets/screenshots/plan.png" width="250" alt="10-step plan"></td>
   </tr>
 </table>
 
@@ -53,25 +53,6 @@ Designed, built and shipped solo, from the first sketch to the App Store.
 
 Premium is an auto-renewable subscription (monthly or yearly, 3-day free trial) built on StoreKit 2. Every purchase is verified on the server against Apple's signed transaction.
 
-## Architecture
-
-```mermaid
-flowchart LR
-    A["iOS app<br/>SwiftUI · MVVM + Coordinators"] -->|"Firebase Auth token"| B["Cloud Functions<br/>Node · europe-west1"]
-    B --> C[("Cloud Firestore")]
-    B --> D["Vertex AI<br/>Gemini"]
-    A -.->|"read only"| C
-```
-
-All business rules live on the server, not in the app:
-
-- **No API keys on the device.** Gemini is called only from Cloud Functions.
-- **Server-side limits.** Idea refreshes, goal limits, streaks and subscription status are checked in Cloud Functions; Firestore rules block client writes to ideas, streaks and limits.
-- **Verified users only.** AI features require a verified email.
-- **Data minimisation.** AI usage records expire automatically after about a year (Firestore TTL).
-
-On the client, services sit behind protocols with mock implementations, so ViewModels are testable without Firebase. Local data is split by purpose: SwiftData for the ideas cache, a JSON file for goals, UserDefaults for the streak and quote.
-
 ## Tech stack
 
 | Layer | Technologies |
@@ -94,8 +75,4 @@ Jmix is a commercial app, so its source code is private. I'm happy to walk throu
 
 [App Store](https://apps.apple.com/app/id6834225213) · [Privacy Policy](https://exth.github.io/) · [Terms of Use](https://exth.github.io/terms/) · [Support](https://exth.github.io/support/)
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/footer-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/footer-light.svg">
-  <img alt="" src="./assets/footer-light.svg" width="100%">
-</picture>
+<p align="center">Created by <strong>Exth</strong></p>
