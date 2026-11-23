@@ -45,7 +45,6 @@ Designed, built and shipped solo, from the first sketch to the App Store.
 | | Free | Premium |
 |---|---|---|
 | Active goals | 1 | Up to 5 |
-| New goals per day | 3 | 10 |
 | Idea refreshes | 1 per hour | 5 per hour |
 | Plan steps | Current and next unlocked | All unlocked |
 | Idea history | Last 3 generations | Full history |
