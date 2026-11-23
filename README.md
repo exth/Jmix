@@ -8,9 +8,9 @@
   <a href="https://apps.apple.com/app/id6834225213"><img src="https://img.shields.io/badge/DOWNLOAD_ON_THE_APP_STORE-30363D?style=for-the-badge" alt="Download on the App Store"></a>
 </p>
 
-**Jmix** is an iPhone app that helps people find a career that fits their real life, and then actually follow it. You describe a typical day, AI suggests careers that match it, and the app turns the one you pick into a 10-step plan backed by a daily check-in habit.
+**Jmix** is an iPhone app that helps people find a career that fits their real life, and then actually follow it. You describe a typical day, AI suggests careers that match it, and the app turns the one you pick into a 10-step plan backed by a daily check-in habit. Jmix is a commercial app, so its source code is private
 
-Designed, built and shipped solo, from the first sketch to the App Store.
+Designed, built and shipped solo, from the first sketch to the App Store
 
 ## Screenshots
 
@@ -24,10 +24,10 @@ Designed, built and shipped solo, from the first sketch to the App Store.
 
 ## How it works
 
-1. **Describe your day.** A short onboarding asks who you want to become and what a typical day looks like.
-2. **Get career ideas.** Gemini suggests three careers that fit your routine and interests.
-3. **Pick one and get a plan.** The chosen career becomes a 10-step plan: seven learning steps and three practice steps, each with tasks and realistic durations.
-4. **Show up every day.** Daily check-ins build a streak, with three freezes a month for days that don't go to plan.
+1. **Describe your day:** A short onboarding asks who you want to become and what a typical day looks like
+2. **Get career ideas:** Gemini suggests three careers that fit your routine and interests
+3. **Pick one and get a plan:** The chosen career becomes a 10-step plan: seven learning steps and three practice steps, each with tasks and realistic durations
+4. **Show up every day:** Daily check-ins build a streak, with three freezes a month for days that don't go to plan
 
 ## Features
 
@@ -50,7 +50,7 @@ Designed, built and shipped solo, from the first sketch to the App Store.
 | Idea history | Last 3 generations | Full history |
 | Ads | Yes | No |
 
-Premium is an auto-renewable subscription (monthly or yearly, 3-day free trial) built on StoreKit 2. Every purchase is verified on the server against Apple's signed transaction.
+Premium is an auto-renewable subscription (monthly or yearly, 3-day free trial) built on StoreKit 2
 
 ## Tech stack
 
@@ -58,17 +58,11 @@ Premium is an auto-renewable subscription (monthly or yearly, 3-day free trial) 
 |---|---|
 | iOS | Swift, SwiftUI, Observation (`@Observable`), MVVM + Coordinators, SwiftData, StoreKit 2 |
 | Backend | Firebase Auth, Cloud Firestore, Cloud Functions (2nd gen, Node), Vertex AI Gemini |
-| Ads and privacy | Google Mobile Ads, UMP consent, App Tracking Transparency |
-| Testing | Swift Testing (60+ tests), Node tests for server rules |
 
 ## Testing
 
-- **iOS:** 60+ tests with Swift Testing covering streak logic, goals, ideas, auth validation and quotes.
-- **Server:** Node tests for the rules behind limits, streaks and time zones.
-
-## Source code
-
-Jmix is a commercial app, so its source code is private. I'm happy to walk through the code, architecture and decisions in an interview.
+- **iOS:** 60+ unit tests (Swift Testing). Services are mocked behind protocols, so ViewModels are tested in isolation
+- **Server:** Node tests cover the rules for limits, streaks and time zones
 
 ## Links
 
