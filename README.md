@@ -56,7 +56,7 @@ Premium is an auto-renewable subscription (monthly or yearly, 3-day free trial) 
 
 | Layer | Technologies |
 |---|---|
-| iOS | Swift, SwiftUI, Observation (`@Observable`), MVVM + Coordinators, SwiftData, StoreKit 2 |
+| iOS | Swift, SwiftUI, Observation (`@Observable`), MVVM + Coordinator, SwiftData, StoreKit 2 |
 | Backend | Firebase Auth, Cloud Firestore, Cloud Functions (2nd gen, Node), Vertex AI Gemini |
 
 ## Testing
