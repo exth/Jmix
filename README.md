@@ -25,7 +25,7 @@ Designed, built and shipped solo, from the first sketch to the App Store.
 ## How it works
 
 1. **Describe your day.** A short onboarding asks who you want to become and what a typical day looks like.
-2. **Get career ideas.** Gemini suggests three careers that fit your routine, interests and constraints.
+2. **Get career ideas.** Gemini suggests three careers that fit your routine and interests.
 3. **Pick one and get a plan.** The chosen career becomes a 10-step plan: seven learning steps and three practice steps, each with tasks and realistic durations.
 4. **Show up every day.** Daily check-ins build a streak, with three freezes a month for days that don't go to plan.
 
